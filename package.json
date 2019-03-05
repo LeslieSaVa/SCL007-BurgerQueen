@@ -1,0 +1,31 @@
+{
+  "name": "scl007-burgerqueen",
+  "version": "1.0.0",
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeslieSaVa/SCL007-BurgerQueen.git"
+  },
+  "author": "Leslie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeslieSaVa/SCL007-BurgerQueen/issues"
+  },
+  "homepage": "https://github.com/LeslieSaVa/SCL007-BurgerQueen#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "firebase": "^5.8.5"
+  }
+}
