@@ -1,0 +1,117 @@
+{
+    "Desayuno":{
+        "Café americano":{
+            "precio":500
+        },
+        "Café con leche":{
+            "precio":700 
+        },
+        "Sandwich de jamón y queso":{
+            "precio":1000
+        },
+        "Jugo Natural":{
+            "precio":700
+        }
+    },
+    "Menú resto del día":{
+        "Hamburguesas":{
+            "simples":{
+                "Res":{
+                    "sola":{
+                        "precio":1500
+                    },
+                    "con queso":{
+                        "precio":2000
+                    },
+                    "con huevo":{
+                        "precio":2000
+                    }
+                },
+                "Pollo":{
+                    "sola":{
+                        "precio":1500
+                    },
+                    "con queso":{
+                        "precio":2000
+                    },
+                    "con huevo":{
+                        "precio":2000
+                    }
+                },
+                "Vegetariana":{
+                    "sola":{
+                        "precio":1500
+                    },
+                    "con queso":{
+                        "precio":2000    
+                    },
+                    "con huevo":{
+                        "precio":2000
+                    }
+                }
+            },
+            "Dobles":{
+                "Res":{
+                    "sola":{
+                        "precio":2500
+                    },
+                    "con queso":{
+                        "precio":3000
+                    },
+                    "con huevo":{
+                        "precio":3000
+                    }
+                },
+                "Pollo":{
+                    "sola":{
+                        "precio":2500
+                    },
+                    "con queso":{
+                        "precio":3000
+                    },
+                    "con huevo":{
+                        "precio":3000
+                    }
+                },
+                "Vegetariana":{
+                    "sola":{
+                        "precio":2500
+                    },
+                    "con queso":{
+                        "precio":3000
+                    },
+                    "con huevo":{
+                        "precio": 3000
+                    }
+                }
+            }
+        },
+        "Acompañamientos":{
+            "papas fritas":{
+                "precio":500
+            },
+            "onion rings":{
+                "precio": 500
+            }
+        },
+        "Bebidas":{
+            "500mL":{
+                "Agua":{
+                    "precio":500
+                },
+                "Gaseosa":{
+                    "precio":500
+                }
+            },
+            "750mL":{
+                "Agua":{
+                    "precio":800
+                },
+                "gaseosa":{
+                    "precio": 1000
+                }
+            }
+        }
+    }
+
+}    
