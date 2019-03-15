@@ -43,6 +43,18 @@
         },
         "Bebida 750mL":{
             "precio":1000 
+        },
+        "Con huevo":{
+            "precio":500
+        },
+        "Con queso":{
+            "precio":500
+        },
+        "Papas fritas":{
+            "precio":500
+        },
+        "Onion rings":{
+            "precio":500
         }
     }
 }    

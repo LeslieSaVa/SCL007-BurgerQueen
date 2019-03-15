@@ -73,9 +73,52 @@ function ShowDinner (props) {
                     Hamburguesa Doble Vegetariana $2500
                     </button>
 
-                    <button key="con huevo" className="waves-effect  btn-large btn-coffee">Con huevo $500</button>
-                    <button key="papasfritas" className="waves-effect  btn-large btn-coffee">Papas Fritas $500</button>
-                    <button key="onionrings" className="waves-effect  btn-large btn-coffee">onion rings $500</button>
+                    <button 
+                    key="con huevo" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[10],
+                            price: props.productList.Menúrestodeldía["Con huevo"].precio                           
+                            }])
+                        }}>
+                    Con huevo $500
+                    </button>
+
+                    <button 
+                    key="con queso" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[11],
+                            price: props.productList.Menúrestodeldía["Con queso"].precio                           
+                            }])
+                        }}>
+                    Con queso $500
+                    </button>
+
+                    <button key="papasfritas" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[12],
+                            price: props.productList.Menúrestodeldía["Papas fritas"].precio                           
+                            }])
+                        }}>
+                    Papas Fritas $500
+                    </button>
+
+                    <button 
+                    key="onionrings" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[13],
+                            price: props.productList.Menúrestodeldía["Onion rings"].precio                           
+                            }])
+                        }}>
+                    onion rings $500
+                    </button>
             
                 </div>
             ) 
