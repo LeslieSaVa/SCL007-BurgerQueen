@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f95f0f56ae9f751a8e5a",
+    "revision": "402fad3552071172480d",
     "url": "/SCL007-BurgerQueen/static/css/main.067c41bf.chunk.css"
   },
   {
-    "revision": "f95f0f56ae9f751a8e5a",
-    "url": "/SCL007-BurgerQueen/static/js/main.f95f0f56.chunk.js"
+    "revision": "402fad3552071172480d",
+    "url": "/SCL007-BurgerQueen/static/js/main.402fad35.chunk.js"
   },
   {
     "revision": "ef0ee4a49c678152c9da",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/SCL007-BurgerQueen/static/js/2.c67340c9.chunk.js"
   },
   {
-    "revision": "2687f90f13c495ef738846ffc026d53c",
+    "revision": "98d5a48e47c026577e330cdf487b68b7",
     "url": "/SCL007-BurgerQueen/index.html"
   }
 ];

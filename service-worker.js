@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/SCL007-BurgerQueen/precache-manifest.cbe75a068a68e6b912f6f33105ddb753.js"
+  "/SCL007-BurgerQueen/precache-manifest.0ab3944cc17793972bca11d0edaa7ce9.js"
 );
 
 workbox.clientsClaim();
