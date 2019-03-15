@@ -1,0 +1,12 @@
+tbody td{
+    text-align: center;
+    color : #EFD9CE !important;
+}
+    
+thead th{
+    text-align: center;
+    color: #EFD9CE !important;
+}
+.table-card-content{
+    background-color: #002147 !important;
+}

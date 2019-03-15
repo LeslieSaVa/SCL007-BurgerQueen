@@ -1,4 +1,5 @@
 import React from 'react';
+import './input.css'
 
 function InputUser (props) {
     
@@ -10,7 +11,6 @@ function InputUser (props) {
                         <div className="col s6 m6">
                             <input
                                 id="inputName"
-                                className="holi2"
                                 type="text"
                                 placeholder="Nombre Cliente"
                                 onChange={props.onChange}

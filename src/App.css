@@ -7,46 +7,6 @@ body{
 #half2{
   background:  #EFD9CE ;
 }
-.btn-options{
-  margin-left: 1%;
-  margin-right: 7%;
-  margin-bottom: 4%;
-  background: #A675A1 !important;
-  color: #EFD9CE;
-}
-/* .blackButton{
-  background: black;
-}
-.whiteButton{
-  background: pink;
-} */
-tbody td{
-text-align: center;
-color : #EFD9CE !important;
-}
-.holi2{
-  color: #002147;
-}
-thead th{
-  text-align: center;
-  color: #EFD9CE !important;
-}
-.table-card-content{
-  background-color: #002147 !important;
-}
-.btn-save{
-  margin-top:5%;
-  border: 2px solid #002147 !important;
-  background-color: #EFD9CE !important;
-  color: #002147 !important;
-}
-.btn-coffee{
-  border: 3px solid #7e57c2;
-  margin: 2%;
-  background-color: #CEA2AC !important;
-  color: #002147 !important;
-}
-
 .App {
   text-align: center;
 }
@@ -70,3 +30,9 @@ thead th{
     transform: rotate(360deg);
   }
 }
+/* .blackButton{
+  background: black;
+}
+.whiteButton{
+  background: pink;
+} */

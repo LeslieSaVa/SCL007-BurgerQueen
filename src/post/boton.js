@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './boton.css'
 
 function Boton1 (props) {
     
@@ -7,11 +7,11 @@ function Boton1 (props) {
             <div>
                 <button
                 key="waiter"
-                className="waves-effecty btn-small btn-options"
+                className="waves-effecty btn-large btn-options"
                 onClick={props.showMenu}
                 >DESAYUNO</button>
                 <button 
-                className="waves-effect btn-small btn-options"
+                className="waves-effect btn-large btn-options"
                 key="kitchen"
                 onClick={props.showDinner}
                 >ALMUERZO y CENA</button>

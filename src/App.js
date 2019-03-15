@@ -138,7 +138,9 @@ class App extends Component {
 
             <div>
             <ShowDinner 
-            showDinner={this.state.showDinner}/>
+            onClick={this.agregandoProductsTotheList}
+            showDinner={this.state.showDinner}
+            productList={this.state.menu}/>
             </div>    
 
           </div>

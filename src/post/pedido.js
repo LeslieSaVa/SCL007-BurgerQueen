@@ -1,4 +1,6 @@
 import React from 'react';
+import './pedido.css'
+
 function Pedido (props) {
 
     const displayProducts = props.productList.map(elem => {

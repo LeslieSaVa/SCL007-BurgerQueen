@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/LeslieSaVa/SCL007-BurgerQueen/issues"
   },
-  "homepage": "https://LeslieSava.github.io/SCL007-BurgerQueen",
+  "homepage": "https://LeslieSava.github.io/SCL007-BurguerQueen",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.15.1",
