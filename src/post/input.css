@@ -3,4 +3,8 @@
     border: 2px solid #002147 !important;
     background-color: #EFD9CE !important;
     color: #002147 !important;
+
+}
+#inputName::placeholder{
+    color: #002147 !important;
 }

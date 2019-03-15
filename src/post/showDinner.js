@@ -7,31 +7,76 @@ function ShowDinner (props) {
             return (
                 <div>
                     <button 
-                    key="Hamburguesa Simple" 
+                    key="Hamburguesa Simple Res" 
                     className="waves-effect  btn-large btn-coffee"
                     onClick={() => {
                         props.onClick([{
-                            food:Object.keys(props.productList.Menúrestodeldía)[1],
-                            price:props.productList.Menúrestodeldía["Hamburguesas"].precio
+                            food:Object.keys(props.productList.Menúrestodeldía)[0],
+                            price:props.productList.Menúrestodeldía["Hamburguesa Simple Res"].precio
                         }])
                     }}>
-                    Hamburguesa Simple $1500
+                    Hamburguesa Simple Res $1500
+                    </button>
+
+                    <button
+                    key="Hamburguesa Simple pollo"
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[1],
+                            price: props.productList.Menúrestodeldía["Hamburguesa Simple Pollo"].precio                            }])
+                        }}>
+                    Hamburguesa Simple Pollo $1500
                     </button>
                     
+                    <button
+                    key="Hamburguesa Simple vegetariana"
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[2],
+                            price: props.productList.Menúrestodeldía["Hamburguesa Simple vegetariana"].precio                            }])
+                        }}>
+                    Hamburguesa Simple Vegetariana $1500
+                    </button>
                     
-                    <button key="Hamburguesa Doble" className="waves-effect btn-large btn-coffee">Hamburguesa Doble $2500</button>
-                    <button key="Res" className="waves-effect  btn-large btn-coffee">Res</button>
-                    <button key="Pollo" className="waves-effect  btn-large btn-coffee">Pollo</button>
-                    <button key="Vegetariano" className="waves-effect  btn-large btn-coffee">Vegetariano</button>
-                    <button key="con queso " className="waves-effect  btn-large btn-coffee">Con queso $500</button>
+                    <button 
+                    key="Hamburguesa Doble Res" 
+                    className="waves-effect btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[3],
+                            price: props.productList.Menúrestodeldía["Hamburguesa Doble Res"].precio                            }])
+                        }}>
+                    Hamburguesa Doble Res $2500
+                    </button>
+                    
+                    <button 
+                    key="Hamburguesa Doble Pollo" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[4],
+                            price: props.productList.Menúrestodeldía["Hamburguesa Doble Pollo"].precio                            }])
+                        }}>
+                    Hamburguesa Doble Pollo $2500
+                    </button>
+
+                    <button 
+                    key="Hamburguesa Doble Vegetariana" 
+                    className="waves-effect  btn-large btn-coffee"
+                    onClick={() => {
+                        props.onClick([{
+                            food: Object.keys(props.productList.Menúrestodeldía)[5],
+                            price: props.productList.Menúrestodeldía["Hamburguesa Doble vegetariana"].precio                            }])
+                        }}>
+                    Hamburguesa Doble Vegetariana $2500
+                    </button>
+
                     <button key="con huevo" className="waves-effect  btn-large btn-coffee">Con huevo $500</button>
                     <button key="papasfritas" className="waves-effect  btn-large btn-coffee">Papas Fritas $500</button>
                     <button key="onionrings" className="waves-effect  btn-large btn-coffee">onion rings $500</button>
-                    <button key="Agua" className="waves-effect  btn-large btn-coffee">Agua 500mL $500</button>
-                    <button key="Agua1" className="waves-effect  btn-large btn-coffee">Agua 750mL $800</button>
-                    <button key="bebida" className="waves-effect  btn-large btn-coffee">Bebida 500mL $700</button>
-                    <button key="bebida2" className="waves-effect  btn-large btn-coffee">Bebida 750mL $1000</button>
-
+            
                 </div>
             ) 
         }else{

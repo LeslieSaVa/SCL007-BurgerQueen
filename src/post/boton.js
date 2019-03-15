@@ -15,6 +15,13 @@ function Boton1 (props) {
                 key="kitchen"
                 onClick={props.showDinner}
                 >ALMUERZO y CENA</button>
+                
+                <button 
+                className="waves-effect btn-large btn-options"
+                key="bebida"
+                onClick={props.showBebestibles}
+                >BEBESTIBLES</button>
+
             </div>
         )
 }

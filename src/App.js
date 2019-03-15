@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InputUser from './post/input';
 import Boton1 from './post/boton';
 import Pedido from './post/pedido';
+import ShowBebestibles from './post/showBebestibles';
 //import firebase from './post/firebase';
 //import BotonMenusyDesayunior from './post/botonmenu';
 //import Test from './post/probando';
@@ -24,7 +25,8 @@ class App extends Component {
       showMenu: false,
       showDinner: false,
       black: true,
-      product: []
+      product: [],
+      showBebestibles: false
     }
     this.saveName = this.saveName.bind(this);
     this.clickMenu= this.clickMenu.bind(this);
@@ -33,6 +35,7 @@ class App extends Component {
     this.mostrarCena = this.mostrarCena.bind(this);
     this.changeColor=this.changeColor.bind(this);
     this.agregandoProductsTotheList = this.agregandoProductsTotheList.bind(this);
+    this.mostrarDrinks= this.mostrarDrinks.bind(this);
   }
 
   agregandoProductsTotheList(item) {
@@ -46,7 +49,8 @@ class App extends Component {
     this.setState({
       ...this.state,
       showMenu: true,
-      showDinner: false
+      showDinner: false,
+      showBebestibles: false
     })
   }
 
@@ -54,7 +58,17 @@ class App extends Component {
     this.setState({
       ...this.state,
       showDinner: true,
-      showMenu: false
+      showMenu: false,
+      showBebestibles: false
+    })
+  }
+
+  mostrarDrinks() {
+    this.setState({
+      ...this.state,
+      showDinner: false,
+      showMenu: false,
+      showBebestibles: true
     })
   }
 
@@ -114,6 +128,7 @@ class App extends Component {
             }} */
             showDinner={this.mostrarCena}
             showMenu={this.mostrarMenu}
+            showBebestibles={this.mostrarDrinks}
 
             />
             {/* <Test
@@ -141,7 +156,16 @@ class App extends Component {
             onClick={this.agregandoProductsTotheList}
             showDinner={this.state.showDinner}
             productList={this.state.menu}/>
+
             </div>    
+            <ShowBebestibles
+            onClick={this.agregandoProductsTotheList}
+            showBebestibles={this.state.showBebestibles}
+            productList={this.state.menu}
+            />
+            <div>
+
+            </div>
 
           </div>
           

@@ -14,104 +14,36 @@
         }
     },
     "Menúrestodeldía":{
-        "Hamburguesas":{
-            "simples":{
-                "Res":{
-                    "sola":{
-                        "precio":1500
-                    },
-                    "con queso":{
-                        "precio":2000
-                    },
-                    "con huevo":{
-                        "precio":2000
-                    }
-                },
-                "Pollo":{
-                    "sola":{
-                        "precio":1500
-                    },
-                    "con queso":{
-                        "precio":2000
-                    },
-                    "con huevo":{
-                        "precio":2000
-                    }
-                },
-                "Vegetariana":{
-                    "sola":{
-                        "precio":1500
-                    },
-                    "con queso":{
-                        "precio":2000    
-                    },
-                    "con huevo":{
-                        "precio":2000
-                    }
-                }
-            },
-            "Dobles":{
-                "Res":{
-                    "sola":{
-                        "precio":2500
-                    },
-                    "con queso":{
-                        "precio":3000
-                    },
-                    "con huevo":{
-                        "precio":3000
-                    }
-                },
-                "Pollo":{
-                    "sola":{
-                        "precio":2500
-                    },
-                    "con queso":{
-                        "precio":3000
-                    },
-                    "con huevo":{
-                        "precio":3000
-                    }
-                },
-                "Vegetariana":{
-                    "sola":{
-                        "precio":2500
-                    },
-                    "con queso":{
-                        "precio":3000
-                    },
-                    "con huevo":{
-                        "precio": 3000
-                    }
-                }
-            }
+        "Hamburguesa Simple Res":{
+            "precio": 1500
         },
-        "Acompañamientos":{
-            "papas fritas":{
-                "precio":500
-            },
-            "onion rings":{
-                "precio": 500
-            }
+        "Hamburguesa Simple Pollo":{
+            "precio":1500
         },
-        "Bebidas":{
-            "500mL":{
-                "Agua":{
-                    "precio":500
-                },
-                "Gaseosa":{
-                    "precio":500
-                }
-            },
-            "750mL":{
-                "Agua":{
-                    "precio":800
-                },
-                "gaseosa":{
-                    "precio": 1000
-                }
-            }
+        "Hamburguesa Simple vegetariana":{
+            "precio":1500
+        },
+        "Hamburguesa Doble Res":{
+            "precio": 2500
+        },
+        "Hamburguesa Doble Pollo":{
+            "precio": 2500
+        },
+        "Hamburguesa Doble vegetariana":{
+            "precio": 2500
+        },
+        "Agua 500mL":{
+            "precio":500
+        },
+        "Agua 750mL":{
+            "precio":800
+        },
+        "Bebida 500mL":{
+            "precio":700
+        },
+        "Bebida 750mL":{
+            "precio":1000 
         }
     }
-
 }    
+        
