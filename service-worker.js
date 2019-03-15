@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/SCL007-BurguerQueen/precache-manifest.61fc7adce590fa347f6ef50e6f69011f.js"
+  "/SCL007-BurgerQueen/precache-manifest.4b798eb2d6d50d0c0e0e1ed56aa8516d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/SCL007-BurguerQueen/index.html", {
+workbox.routing.registerNavigationRoute("/SCL007-BurgerQueen/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
