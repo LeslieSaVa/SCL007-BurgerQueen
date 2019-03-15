@@ -4,6 +4,7 @@ function Test (props) {
             <button
                 className={props.btn_class}
                 onClick={props.onClick}
+                
             >
                 PROBANDO
             </button>

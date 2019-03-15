@@ -17,7 +17,7 @@ function InputUser (props) {
                                 value={props.temporalName}/> 
                         </div>
                         <div className="col s6 m6">
-                        <button className="waves-effect deep-purple lighten-4 btn btn-save" onClick= {props.onClick} >Save</button>
+                        <button className="waves-effect btn btn-save" onClick= {props.onClick} >Enviar</button>
                         </div>
                     </div>
                 </div>
