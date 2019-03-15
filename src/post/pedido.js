@@ -7,7 +7,7 @@ function Pedido (props) {
                 <td>{elem.food}</td>
                 <td></td>
                 <td>$ {elem.price}</td>
-                <td></td>
+                <td><i className="material-icons">delete</i></td>
             </tr>
         )
     })
@@ -24,9 +24,8 @@ function Pedido (props) {
                                 <thead>
                                     <tr>
                                         <th>Producto</th>
-                                        <th>Cantidad</th>
+                                        <th>Cant</th>
                                         <th>Valor</th>
-                                        <th>Icono</th>
                                     </tr>
                                 </thead>
 

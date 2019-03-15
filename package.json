@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/LeslieSaVa/SCL007-BurgerQueen/issues"
   },
-  "homepage": "https://burguerqueen-47235.firebaseapp.com/",
+  "homepage": "https://LeslieSava.github.io/SCL007-BurguerQueen",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.15.1",
@@ -22,13 +22,16 @@
     "eslint-plugin-react": "^7.12.4"
   },
   "dependencies": {
+    "eslint": "5.12.0",
     "firebase": "^5.8.5",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "eslint": "5.12.0"
+    "react-scripts": "2.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
