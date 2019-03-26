@@ -14,6 +14,9 @@ function Pedido (props) {
         )
     })
 
+    const sumPrice = props.productList.reduce(function (prev, next) {
+        return (prev + next.price)},0)
+
         return (
 
             <div className="container">
@@ -58,7 +61,7 @@ function Pedido (props) {
                                 {/* eslint-disable-next-line */}
                                 <a href="#">Total</a>
                                 {/* eslint-disable-next-line */}
-                                <a href="#">$</a>
+                                <a href="#">$ {sumPrice}</a>
                             </div>
                             <div className="card-action">
                                 {/* eslint-disable-next-line */}
