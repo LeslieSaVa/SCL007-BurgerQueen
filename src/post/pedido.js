@@ -1,15 +1,20 @@
 import React from 'react';
 import './pedido.css'
 
+
 function Pedido (props) {
 
-    const displayProducts = props.productList.map(elem => {
+
+    const displayProducts = props.productList.map((elem,i) => {
         return (
-            <tr>
+            <tr key={i}>
                 <td>{elem.food}</td>
                 <td></td>
                 <td>$ {elem.price}</td>
-                <td><i className="material-icons">delete</i></td>
+                <td><i 
+                className="material-icons"
+                onClick={ () => props.onClick(elem)}
+                >delete</i></td>
             </tr>
         )
     })
@@ -65,7 +70,9 @@ function Pedido (props) {
                             </div>
                             <div className="card-action">
                                 {/* eslint-disable-next-line */}
-                                <a href="#">Enviar a cocina</a>
+                                <a 
+                                onClick={props.onClick2}
+                                href='#'>Enviar a cocina</a>
                             </div>
                         </div>
                     </div>

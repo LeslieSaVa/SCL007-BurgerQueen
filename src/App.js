@@ -3,7 +3,7 @@ import InputUser from './post/input';
 import Boton1 from './post/boton';
 import Pedido from './post/pedido';
 import ShowBebestibles from './post/showBebestibles';
-//import firebase from './post/firebase';
+import { database } from './post/provider';
 //import BotonMenusyDesayunior from './post/botonmenu';
 //import Test from './post/probando';
 import ShowMenu1 from './post/showMenu';
@@ -36,6 +36,31 @@ class App extends Component {
     this.changeColor=this.changeColor.bind(this);
     this.agregandoProductsTotheList = this.agregandoProductsTotheList.bind(this);
     this.mostrarDrinks= this.mostrarDrinks.bind(this);
+    this.deleteItemsFromtheList=this.deleteItemsFromtheList.bind(this);
+    this.sendOrderToFirebase=this.sendOrderToFirebase.bind(this);
+  }
+
+  sendOrderToFirebase (){
+    const sendOrder = {
+      name: this.state.name,
+      product: this.state.product,
+      key: orderKey
+    }
+    let orderKey = database.ref("kitchen").push().key;
+    let updates = {};
+
+    updates["kitchen/" + orderKey] = sendOrder;
+    return database.ref().update(updates);
+
+  }
+
+  deleteItemsFromtheList(item) {
+    this.setState({
+      ...this.state,
+      product: this.state.product.filter( (options) => {
+        return options !== item
+      })
+    })
   }
 
   agregandoProductsTotheList(item) {
@@ -173,6 +198,8 @@ class App extends Component {
           <div id="half2" className="col s6 m6">
 
             <Pedido
+            onClick2={this.sendOrderToFirebase}
+            onClick={this.deleteItemsFromtheList}
             productInfo={this.state.menu}
             productList={this.state.product}
             nameclient={this.state.name}
