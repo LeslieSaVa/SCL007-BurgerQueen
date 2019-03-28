@@ -1,0 +1,23 @@
+.header {
+    background:  #EFD9CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color:#8F3985;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 35px;
+}
+.header p {
+    display: inline-block;
+    width: 100%;
+}
+.btn-waitress{
+    color: #EFD9CE !important;
+    background-color: #002147 !important;
+}
+.btn-kitchen{
+    color: #EFD9CE !important;
+    background-color: #002147 !important;
+}

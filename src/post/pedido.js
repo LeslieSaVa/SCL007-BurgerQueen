@@ -29,7 +29,7 @@ function Pedido (props) {
                     <div className="col s12 m12">
                         <div className="card table-card-content">
                             <div className="card-content white-text">
-                                <span className="card-title">Pedido de: {props.nameclient}</span>
+                                <span className="orderOf card-title">Pedido de: {props.nameclient}</span>
 
                                 <thead>
                                     <tr>
@@ -64,13 +64,18 @@ function Pedido (props) {
                             </div>
                             <div className="card-action">
                                 {/* eslint-disable-next-line */}
-                                <a href="#">Total</a>
+                                <a 
+                                className="btn-total"
+                                href="#">Total</a>
                                 {/* eslint-disable-next-line */}
-                                <a href="#">$ {sumPrice}</a>
+                                <a 
+                                className="btn-price"
+                                href="#">$ {sumPrice}</a>
                             </div>
                             <div className="card-action">
                                 {/* eslint-disable-next-line */}
                                 <a 
+                                className="btn-sendKitchen"
                                 onClick={props.onClick2}
                                 href='#'>Enviar a cocina</a>
                             </div>

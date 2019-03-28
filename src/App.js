@@ -4,6 +4,7 @@ import Boton1 from './post/boton';
 import Pedido from './post/pedido';
 import ShowBebestibles from './post/showBebestibles';
 import { database } from './post/provider';
+import Header from './post/header'
 //import BotonMenusyDesayunior from './post/botonmenu';
 //import Test from './post/probando';
 import ShowMenu1 from './post/showMenu';
@@ -44,13 +45,19 @@ class App extends Component {
     const sendOrder = {
       name: this.state.name,
       product: this.state.product,
-      key: orderKey
+  
     }
-    let orderKey = database.ref("kitchen").push().key;
-    let updates = {};
-
-    updates["kitchen/" + orderKey] = sendOrder;
-    return database.ref().update(updates);
+    if (!sendOrder.name){
+      alert("Ingresa el nombre del cliente")
+    }else {
+      database.ref("kitchen").push(sendOrder, () => {
+        this.setState({
+          ...this.state,
+          product:[],
+          name:"",
+        })
+      });
+    }
 
   }
 
@@ -129,13 +136,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Burguer Queen Pedidos
-          </p>
-          
-        </header>
+      <div className="App">          
+        <Header />
+
         <div className="row">
 
           <div id="half1" className="col s6 m6">
